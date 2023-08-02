@@ -1,0 +1,25 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+$colorP: red, green, blue, yellow, purple;
+
+@each $elem in $colorP {
+  .p-#{$elem} {
+    background-color: $elem;
+  }
+}
+
+@mixin myText($fontPrimary) {
+  font-size: $fontPrimary;
+  height: 50px;
+  color: black;
+}
+
+h1 {
+  @include myText(50px);
+}
+h2 {
+  @include myText(30px);
+}

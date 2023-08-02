@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+}
+
+.padding-inline-xs {
+  padding-inline: 10px;
+}
+
+.padding-inline-sm {
+  padding-inline: 20px;
+}
+
+.padding-inline-md {
+  padding-inline: 50px;
+}
+
+.padding-inline-lg {
+  padding-inline: 120px;
+}/*# sourceMappingURL=margins.css.map */

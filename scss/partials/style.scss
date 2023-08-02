@@ -1,0 +1,27 @@
+@import "./reset.scss";
+@import "./animazioni.scss";
+@import "./color.scss";
+@import "./margins.scss";
+@import "./botton.scss";
+@import "./font.scss";
+
+@mixin floating($borderRadius, $boxShadow, $border) {
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  border: $border;
+}
+
+.imgHero {
+  @include floating(10px, 0.5rem 0.5rem rgb(93, 252, 209), 5px solid rgb(93, 252, 209));
+}
+.imgCard {
+  @include floating(15px, 0.2rem 0.2rem rgb(146, 252, 93), 3px solid rgb(146, 252, 93));
+}
+
+@mixin grid($colNumber) {
+  col-sm-: #{$colNumber};
+}
+
+.gridExtra {
+  @include grid(4);
+}
